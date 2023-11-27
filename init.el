@@ -6,3 +6,8 @@
       indent-tabs-mode nil
       tab-width 2)
 (c-set-offset 'case-label '+)
+(add-hook 'python-mode-hook
+      (lambda ()
+        (setq indent-tabs-mode t)
+        (setq tab-width 2)
+        (setq python-indent-offset 2)))
